@@ -6,46 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Only God - Kabir</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <nav>
+    <div id="container">
+        <nav>
+            <h1><span>God Is Kabir</span></h1>
+            <input type="checkbox" id="click">
+            <label for="click" class="menu-btn"><i class="fa-solid fa-bars" id="menu-btn"></i></label>
+            <ul id="ul">
+                <a href="#" class="anchor "><h3 class="active">Home</h3></a>
+                <a href="#Qualifications" class="anchor"><h3>QualifiCations</h3></a>
+                <a href="#" class="anchor"><h3>Certificates</h3></a>
+                <a href="#" class="anchor"><h3>About Us</h3></a>
+                <a href="#" class="anchor"><h3>Contact Us</h3></a>
+                <button class="hire-btn hide">Hire Now</button>
+            </ul>
+        </nav>
+        
+    <!-- <nav>
         <h1> <span>God Is Kabir</span></h1>
-        <ul>
-            <a href="#" class="anchor"><h3>Home</h3></a>
-            <a href="qualification.html" class="anchor"><h3>QualifiCations</h3></a>
+        <ul id="ul">
+            <a href="#" class="anchor "><h3 class="active">Home</h3></a>
+            <a href="#Qualifications" class="anchor"><h3>QualifiCations</h3></a>
             <a href="#" class="anchor"><h3>Certificates</h3></a>
             <a href="#" class="anchor"><h3>About Us</h3></a>
             <a href="#" class="anchor"><h3>Contact Us</h3></a>
-            <button id="primary-btn">Hire Now</button>
-            <a href="#" class="icon"><i class="fa-solid fa-bars"></i></a>
+            <button class="hire-btn hide" >Hire Now</button>
         </ul>
+        <input type="checkbox" id="click">
+       <label for="click" class="menu-btn"><i class="fa-solid fa-bars"></i></label></a>
         
-    </nav>
+    </nav> -->
     <main>
         <div class="wrapper">
             <!-- <div id="container"> -->
             <div id="image-section"><img src="../../images/Logo's/dp.png" alt=""></div>
             <div id="text-section">
                 <div id="text">
-                <h1>Hey There That Is <span>Tushar Godsay !</span> </h1>
-                <h3>A <span class="bg highlight">Web Developer</span> That Know <span class="bg highlight">FullStack</span> || <span class="bg highlight">mernStack</span> And Other Languages .</h3>
-                <p>
-                    Hey there, i am a professional web developer knowing languages like c , c++ , java , javascript , html , css , and knowing tools like wordpress adobe excel and some others . i have 2 years of experience of coding all the things that i know that are the done by god grace , of god kabir that is only one god almighty god
-                </p>
+                <h1 >Hey There Its <span>Tushar Godsay !</span> </h1>
+                <h3 >A <span class="bg highlight">Web Developer</span> That Know <span class="bg highlight">FullStack</span> || <span class="bg highlight">mernStack</span> And Other Languages .</h3>
+                <p >
+                    Hey there, i am a professional web developer knowing languages like c , c++ , java , javascript , html , css , and knowing tools like wordpress adobe excel and some others . i have 2 years of experience of coding by god kabir grace .</p>
             </div>
                 <div id="btn-section">
                     <button id="primary-btn">Download CV <i class="fa-solid fa-download"></i></button>
-                    <button id="primary-btn  " class="hire-btn" onclick="hire()">Hire Now</button>
+                    <button class="hire-btn" onclick="hire()">Hire Now</button>
                    </div>
             </div>
-            <div id="arrow">
-                &downarrow;
-            </div>
+           
         </div>
+     </main>
+     <hr>
+     <div id="Qualifications">
+        <div id="edu-intro">
+        <h1 class="heading" align="center"> Educations  <span>&leftarrow; </span></h1>
+        <p>"I have successfully completed my schooling and currently pursuing Bachelor of Computer Applications (BCA), aiming to further enhance my knowledge in the field of technology and software development."
+        </p>
         </div>
-    </main>
+        <div id="Bca">     
+              <h3 class="headings bg highlight">Pursuing Bachelors of Computer Application (BCA) : &rightarrow;</h3>
+                   <p class="para-edu">I joins Bachelors of Computer Application from Mukund Lal national College That is Affilated to the Kurukshetra University(kuk) in August 2023 . I Extract many things from the bca course by the god grace .  </p>
+                   <h4 class="headings bg highlight">College Or University</h4>
+                   <p class="para-edu">I pursue my bca from mukund lal national college that is affilated to the kurukshetra university (Kuk) It is Degree Collge that offers various degrees like MA, BA, BBA, b.Com etc </p>
+                   <h3 class ="bg highlight headings">Senior Secondary Education </h3>
+                   <p class="para-edu">
+                    I done my senior secondary Education from Government Senior secondary school sialba in April 2023 . I have PCM (Non Medical) in 12th . i got 69% . 
+                   </p>
+                   <h3 class ="bg highlight headings"> Secondary Education </h3>
+                   <p class="para-edu ">
+                    I done my secondary Education from Government  secondary school sialba in April 2021 . I havve 95% in my secondar education ,. . 
+                   </p>
+        </div>
+        <div id="skills">
+                <div id="skill-wrap">
+                    <div>
+                        <h1 class="heading" align="center ">Skills </h1>
+                    </div>
+                       <!-- <div>
+                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus, assumenda! Non ipsum deleniti, veritatis voluptas accusamus aut cumque commodi? Harum maxime repellendus, fuga autem illo ea dolores ipsa? Ad quasi exercitationem, dolore, odit corporis dolorum maxime quae sequi consequatur, delectus illum commodi quidem provident perferendis velit in placeat voluptas sapiente.</p>
+                       </div>
+                       <div id="box-wrap">
+                        <div class="box box1">
+                              <div class="image"> <img src="../../images/Logo's/main-logo.jpeg" alt=""></div>
+                              <div class="text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed iure aliquid officiis voluptate unde dolor nobis suscipit nesciunt enim.
+                              </div>
+                        </div>
+                        <div class="box box2">
+                            
+                            <div class="image"> <img src="../../images/Logo's/main-logo.jpeg" alt=""></div>
+                            <div class="text">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed iure aliquid officiis voluptate unde dolor nobis suscipit nesciunt enim.
+                            </div>
+
+                        </div>
+                        <div class="box box3">
+                            
+                            <div class="image"> <img src="../../images/Logo's/main-logo.jpeg" alt=""></div>
+                            <div class="text">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed iure aliquid officiis voluptate unde dolor nobis suscipit nesciunt enim.
+                            </div>
+
+                        </div>
+                        <div class="box box4">
+                            
+                            <div class="image"> <img src="../../images/Logo's/main-logo.jpeg" alt=""></div>
+                            <div class="text">
+                              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed iure aliquid officiis voluptate unde dolor nobis suscipit nesciunt enim.
+                            </div>
+
+                        </div>
+                        <div class="box box5">
+                            <div class="image"> <img src="../../images/Logo's/main-logo.jpeg" alt=""></div>
+                              <div class="text">
+                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum sed iure aliquid officiis voluptate unde dolor nobis suscipit nesciunt enim.
+                              </div>
+
+                        </div> -->
+                       </div>
+                 </div>
+        </div>
+        <div id="courses">
+
+        </div>
+
+     </div>
+</div>
+    
     <script src="./script.js"></script>
 </body>
 

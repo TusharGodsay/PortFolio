@@ -17,22 +17,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 html,body{
     background: #2a2929;
     color: white;
-    width: 100%;
-    /* height: 100%; */
-    /* font-family: sans-serif; */
-
+    width: 100%;    
+    
 }
-nav{
+#container{
     width: 100%;
-    /* height: 10vh; */
-    padding: 10px;
+}
+#container>img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    z-index: 1;
+}
+#container>img::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+}
+    nav{
+    width: 100%;
+    height: 10vh;
+    padding: 8px 20px;
     justify-content: space-between;
     align-items: center;
     display: flex;
-    background : rgba(255, 255, 255, .2);
+    /* background : rgba(255, 255, 255, .01); */
+    background : rgba(0, 0, 0, .6);
     box-shadow: 2px 2px 15px rgba(0, 0, 0, .5);
     box-sizing: border-box;
     position: sticky;
@@ -47,9 +67,9 @@ ul{
     align-items: center;
     gap: 1vw;
     white-space: nowrap;
-    /* padding: 5px; */
     font-family: nav-items;
     font-weight: 500;
+    box-sizing: border-box;
 }
 ul h3{
     cursor: pointer;
@@ -72,10 +92,14 @@ ul h3::after{
 ul h3:hover{
     color: white;
 }
-ul h3:hover::after{
+ul h3:hover::after ,ul a h3.active::after{
     left: 0;
 
 }
+h3.active{
+    color: white;
+}
+
 nav>h1{
     color: rgb(191, 184, 184);
     white-space: nowrap;
@@ -83,19 +107,19 @@ nav>h1{
 }
 main{
     width: 100%;
+    height: 90vh;
     padding: 10px;
     color:  rgb(214, 207, 207);
+    font-family: nav-items;
+    display: flex;
 }
 main h2{
     font-family: heading;
     font-size: 4vh;
 }
-main{
-    width: 100%;
-    font-family: nav-items;
-}
+
 .wrapper{
-    height: 86vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -140,33 +164,37 @@ span{
 }
 #text-section h2{
     text-transform: capitalize;
-}
-.bg{
+}.bg{
     background-color: rgba(255, 255, 255, .15);
     padding: 2px;
     border-radius: 2px;
     color: rgb(200, 200, 26);
+    padding: 4px 2px;
 }
 
 p{
-    font-size: 13px;
+    font-size: 1.2em;
+    letter-spacing: 1.2px;
+    font-weight: 500 ;
 }
-#arrow{
+
+.heading{
     position: relative;
-    right: -48%;
-    bottom: -12%;
-    background: rgba(255, 255, 255, .6);
-    height: 30px;
-    width: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    color: black;
-    font-size: 1.5em;
-    font-weight: bolder;
-    cursor: pointer;
-} 
+    margin-bottom: 20px;
+    letter-spacing: 1.8px;
+}
+.heading::after{
+    content: '';
+    height: 10%;
+    position: absolute;
+    bottom: -10%; 
+    border-radius: 15px;
+    left: 36.5%; 
+    width: 25%;
+    background: lightseagreen;
+}
+
+
                /* Buttons design */
 
                #btn-section{
@@ -247,30 +275,70 @@ i{
       border-color: white;
      
   }
-  .icon{
+  #menu-btn{
     display: none;
   }
- 
-  @media (max-width:768px) {
-    .wrapper{
-        flex-wrap: wrap;
-    }
-    
-   .anchor{
-        display: none;
-    }
-    .icon{
-        display: block;
-        color: lightseagreen;
-        font-size: 1.6em;
-    }
-    
+  #click{
+    display: none;
   }
-  /* #container{
-      height: 100%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-  } */
+  #click:checked ~ label .fa-bars {
+    display: none;
+    transition: 8s all ease;
+}
+#click:checked ~ label::before {
+    content: "\f00d"; /* FontAwesome cross icon */
+    font-family: "FontAwesome";
+    font-size: 33px;
+    position: absolute;
+    color: white;
+    top:8px;
+   right: 16px;
+   transition:  2s all ease;
+} 
+#Qualifications{
+    padding: 35px;
+}
+#Qualifications h1 , h2 , h3 , h4{
+    font-family: nav-items;
+}
+#Qualifications p, p , p,p{
+    font-family:nav-items ;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+#edu-intro{
+    margin-bottom: 12px;
+}
+#edu-intro p{
+    letter-spacing: 2px;
+    padding: 10px 0px;
+}
+#Bca{
+    padding: 10px 4px;
+}
+#Bca h3{
+    font-weight: 800;
+  
+}
+.headings{
+    position: relative;
+   left: -2.5%;
+   padding: 10px 10px;
+   display: inline-block;
+    border-radius: 4px;
+    margin: 10px;
+}
+/* .headings::after{
+content: '';
+width: 50%;
+height: 10%;
+position: absolute;
+left: 0;
+bottom: -4%;
+border-radius: 50px;
+background: lightseagreen;
+} */
+ .para-edu{
+    padding: 20px 0px;
+    font-weight: 400;
+ }
