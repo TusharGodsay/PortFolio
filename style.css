@@ -134,7 +134,7 @@ main h2{
     width: 100%;
     border-radius:50%;
     border: 2px solid #dadada;
-    box-shadow: 2px 4px 150px  lightseagreen ;
+    box-shadow: 0px 0px 20px  lightseagreen ;
 }
 #text-section{
     height: 95%;
@@ -164,7 +164,8 @@ span{
 }
 #text-section h2{
     text-transform: capitalize;
-}.bg{
+}
+.bg{
     background-color: rgba(255, 255, 255, .15);
     padding: 2px;
     border-radius: 2px;
@@ -296,13 +297,13 @@ i{
    transition:  2s all ease;
 } 
 #Qualifications{
-    padding: 35px;
+    padding: 35px;   
 }
 #Qualifications h1 , h2 , h3 , h4{
     font-family: nav-items;
 }
 #Qualifications p, p , p,p{
-    font-family:nav-items ;
+    font-family:sans-serif ;
     font-weight: 300;
     letter-spacing: 1px;
 }
@@ -328,17 +329,199 @@ i{
     border-radius: 4px;
     margin: 10px;
 }
-/* .headings::after{
-content: '';
-width: 50%;
-height: 10%;
-position: absolute;
-left: 0;
-bottom: -4%;
-border-radius: 50px;
-background: lightseagreen;
-} */
  .para-edu{
     padding: 20px 0px;
-    font-weight: 400;
+}
+
+ #skills{
+    width: 100%;
+    padding: 10px;
+    font-family: nav-items;
  }
+ #skill-wrap{
+    margin-top: 15vh;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(255, 255, 255, .15);
+    padding: 20px;
+ }
+ #Main-box{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px 20px;
+ }
+ .box{
+    height: 250px ;
+    width:250px ;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, .4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+ }
+ .image{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .image img{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 2px;
+ }
+ .text{
+    height: 40%;
+    width: 100%;
+    font-family: nav-items;
+    font-size: 11px;
+    padding: 4px 14px;
+ }
+ .skill-heading::after{
+    content: '';
+    height: 10%;
+    position: absolute;
+    bottom: -10%; 
+    border-radius: 15px;
+    left: 40%; 
+    width: 20%;
+    background: lightseagreen;
+ }
+.vite-icon,.react-icon, .js-icon, .cpp-icon{
+   padding: 12px;
+}
+.java-icon{
+    padding: 4px;
+    position: relative;
+    top: -2%;
+}
+.html-icon{
+    padding: 10px;
+}
+.css-icon{
+    padding: 10px;
+}
+.git-icon{
+    padding: 10px;
+
+}
+.git{
+    height: 3px;
+}
+#certificates{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: ali; */
+}
+#cert2{
+   height: 100%;
+   width: 100%;
+   
+}
+#cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 20px;
+}
+.card{
+    height: 50vh;
+    width: 28vw;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0.132),rgba(255, 255, 255, 0.347));
+}
+.doc{
+    height: 80%;
+    width: 100%;
+    
+}
+.doc img{
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    height: 100%;
+    width: 100%;
+}
+.info{
+    height: 20%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    font-family: sans-serif;
+    padding: auto;
+}
+#about{
+    min-height: 100vh;
+    width: 100%;
+    padding:100px;
+}
+#socials{
+    font-family: nav-items;
+    margin-top: 40px;
+}
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.abt{
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.abt i{
+    margin-right: 4px;
+}
+.abt a{
+    text-decoration: none;
+    color: blue;
+    margin-left: 5px;
+    /* overflow: hidden; */
+}
+.hov{
+    position: relative;
+    overflow: hidden;
+}
+.hov::after{
+    content: "";
+    height: 6%;
+    width: 50%;
+    position:absolute;
+    bottom: 20%;
+    left: -100%;
+    background-color: #dadada;
+    border-radius: 10px;
+}
+.hov:hover::after{
+    left: 35%;
+    transition: .8s all ease;
+}
+.ab-intro{
+    font-family: sans-serif;
+    font-size: 1.5em;
+    
+}
