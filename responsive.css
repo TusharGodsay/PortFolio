@@ -10,7 +10,9 @@
       width: 100%;
       height: 100%;
     }
-    
+    hr{
+        display: none;
+    }
     .icon{
         display: block;
         color: white;
@@ -167,21 +169,28 @@
            right: 16px;
            transition:  2s all ease;
         }    
-        /* Disable body scroll when menu is open */
+       
     body.menu-open {
         overflow: hidden;
     }
     #Qualifications{
         font-family: nav-items;
-        padding: 10px;
+        padding: 20px;
     }
-    .headings{
+    /* .headings{
         position: relative;
-       left: -3.5%;
-       padding: 10px 5px;
-       display: inline-block;
+        left: -3.5%;
+        padding: 10px 5px;
+        display: inline-block;
         border-radius: 4px;
-        margin: 10px;
+        margin: 40px;
+    } */
+    .ed{
+        margin-top: 10vh;
+    }
+    .short{
+        margin-top: 2vh;
+        line-height: 25px;
     }
     #text-section h3{
         text-transform: capitalize;
@@ -193,11 +202,25 @@
         padding:10px;
     }
     #edu-intro{
-        margin-bottom: 12px;
+        margin-top: 10vh;
     }
     #edu-intro p{
         letter-spacing: 2px;
-        padding: 10px 0px;
+        padding: 10px 15px;
+        font-size: 1.4em;
+    }
+    .whe , .sen , .sec ,.bca{
+        letter-spacing: 2px;
+        padding: 10px 15px;
+        font-size: 1.5em;
+        
+    }
+    .bca{
+        margin-top: 2vh;
+
+    }
+    .pad{
+        padding: 20px;
     }
     #Bca{
         padding: 10px 4px;
@@ -208,9 +231,9 @@
     }
     .headings{
         position: relative;
-       left: -2.5%;
-       padding: 10px 5px;
-       display: inline-block;
+        left: -2.5%;
+        /* padding: 10px 10px; */
+        display: inline-block;
         border-radius: 4px;
         margin: 10px;
     } 
@@ -218,7 +241,6 @@
         text-transform: capitalize;
         font-size: 1.1em;
         margin-bottom: 8px;
-        
     }
     .bg{
         background-color: rgba(255, 255, 255, .15);
@@ -227,7 +249,9 @@
         color: rgb(200, 200, 26);
         padding: 4px 2px;
     }
-    
+    .bg , .highlight, .headings{
+        padding: 6px 15px;
+    }
     p{
         font-size:1.2em;
         letter-spacing: 0px;
@@ -251,8 +275,6 @@
     }
     #Main-box{
         display: flex;
-        /* justify-content: flex-start; */
-        /* align-items: center; */
         gap: 20px;
         flex-wrap: wrap;
         padding: 20px 20px;
@@ -292,19 +314,19 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 20px;
+    gap: 12px;
     flex-wrap: wrap;
     padding: 20px 10px;
  }
  .box{
-    height: 100px ;
-    width:100px ;
+    height: 125px;
+    width:125px ;
     border-radius: 4px;
     background: rgba(0, 0, 0, .4);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    align-items: center;
  }
  .image{
     height: 100%;
@@ -388,27 +410,65 @@
     font-family: sans-serif;
     padding: auto;
 }
-/* .vite-icon,.react-icon, .js-icon, .cpp-icon{
-   padding: 12px;
+#about{
+    min-height: 100vh;
+    width: 100%;
+    padding:20px;
 }
-.java-icon{
-    padding: 4px;
+#socials{
+    font-family: nav-items;
+    margin-top: 40px;
+}
+.social-links{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 40px;
+    gap: 10px;
+    flex-wrap: wrap;
+    
+}
+.abt{
+    color: white;
+    background-color: rgba(0, 0, 0, .8);
+    padding: 10px 35px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.abt i{
+    margin-right: 6px;
+}
+.abt a{
+    text-decoration: none;
+    color: blue;
+    margin-left: 5px;
+    /* overflow: hidden; */
+}
+.hov{
     position: relative;
-    top: -2%;
+    overflow: hidden;
 }
-.html-icon{
-    padding: 10px;
+.hov::after{
+    content: "";
+    height: 6%;
+    width: 50%;
+    position:absolute;
+    bottom: 20%;
+    left: -100%;
+    background-color: #dadada;
+    border-radius: 10px;
 }
-.css-icon{
-    padding: 10px;
+.hov:hover::after{
+    left: 35%;
+    transition: .8s all ease;
 }
-.git-icon{
-    padding: 10px;
+.ab-intro{
+    font-family: sans-serif;
+    font-size: 1.5em;
 
 }
-.git{
-    height: 3px; 
-}*/
     }
     
     
