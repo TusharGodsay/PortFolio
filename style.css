@@ -77,6 +77,8 @@ ul h3{
     transition: .4s all ease-in-out;
     position: relative;
     overflow: hidden;
+    font-family: sans-serif;
+
 }
 ul h3::after{
     content: "";
