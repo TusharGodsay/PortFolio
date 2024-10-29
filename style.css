@@ -473,7 +473,6 @@ i{
     width: 100%;
     padding:40px 20px;
     background: rgba(0, 0, 0, .46);
-    margin-top: 20px;
 }
 #socials{
     font-family: nav-items;
@@ -539,4 +538,5 @@ i{
 }
 .card19{
     height: 90vh;
+    margin-bottom: 20px;
 }

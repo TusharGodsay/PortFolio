@@ -147,7 +147,7 @@
          }
          #click:checked ~ label .fa-bars {
             display: none;
-            transition: 8s all ease;
+            transition: .5s all ease;
         }
         #click:checked ~ label::before {
             content: "\f00d"; /* FontAwesome cross icon */
@@ -155,9 +155,10 @@
             font-size: 33px;
             position: absolute;
             color: white;
-            top:11px;
+            top:5px;
            right: 16px;
-           transition:  2s all ease;
+           transition:  .9s all ease;
+           font-size: 2em;
         }    
        
     body.menu-open {
@@ -166,6 +167,10 @@
     #Qualifications{
         font-family: nav-items;
         padding: 20px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .short{
@@ -275,8 +280,11 @@
      #skills{
     width: 100%;
     padding: 10px;
-    background: rgba;
+    background: #171717;
     font-family: nav-items;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
  }
  #skill-wrap{
     margin-top: 0;
@@ -308,6 +316,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    
+ }
+ #image-section img{
+    box-shadow: 0px 0px 20px;
+
  }
  .image img{
     height: 80%;
@@ -315,6 +328,9 @@
     object-fit: cover;
     object-position: center;
     border-radius: 2px;
+    width: 80%;
+    box-shadow: 0px 0px 20px;
+
  }
  .text{
     height: 0%;
@@ -337,9 +353,13 @@
  #certificates{
     min-height: 100vh;
     width: 100%;
-    background:rgba(255, 255, 255, .15);
+    background:rgba(255, 255, 255, .001);
     padding-top: 50px;
     font-family: nav-items;
+    display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #cert2{
    height: 100%;
@@ -369,7 +389,7 @@
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.201),rgba(255, 255, 255, 0.347));
 }
 .doc{
-    height: 60%;
+    height: 80%;
     width: 100%;
 }
 .doc img{
@@ -380,7 +400,7 @@
     width: 100%;
 }
 .info{
-    height: 40%;
+    height: 20%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -394,6 +414,10 @@
     width: 100%;
     padding:20px;
     font-family: nav-items;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #socials{
     font-family: nav-items;
@@ -447,9 +471,32 @@
 .ab-intro{
     font-family: sans-serif;
     font-size: 1.5em;
-
 }
-    }
+.card19{
+    height: 75vh;
+}
+.card19 .doc{
+ height: 90%;
+}
+.card19 .info{
+    height: 10%;
+}
+.fa-bars{
+    font-weight: 100;
+    font-size: 1.4em;
+}
+.menu{
+    display:none;
+}
+.menu.active{
+display: block;
+}
+#navbar.nav-open{
+    background-color: black;
+    transition: background-color 0.3s ease;
+}
+}
+    
     
     
     
