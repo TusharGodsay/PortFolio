@@ -16,3 +16,16 @@
     });
     
     //check github (changes) && Updates till Education (without include images and more info but )
+    function confirmDownload() {
+        // Confirm download
+        const userConfirmed = confirm("Do you want to download My CV?");
+    
+        if (userConfirmed) {
+            // User clicked OK, start the download
+            window.location.href = './Assets/images/Resume.pdf';
+        } else {
+            // User clicked Cancel
+            alert("Download cancelled.");
+        }
+    }
+    

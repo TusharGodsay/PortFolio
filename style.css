@@ -1,16 +1,14 @@
 .anchor{
     text-decoration: none;
     color: rgb(155, 148, 148);
-   
-}
-
+   }
 @font-face {
     font-family: heading;
-    src: url(./Fonts/Poppins-Bold.ttf);
+    src: url(./Assets/Fonts/Poppins-Bold.ttf);
 }
 @font-face {
     font-family: nav-items;
-    src: url(./Fonts/Poppins-Medium.ttf);
+    src: url(./Assets/Fonts/Poppins-Bold.ttf);
 }
 *{
     margin: 0;
@@ -24,7 +22,7 @@ html,body{
     background: #2a2929;
     color: white;
     width: 100%;    
-    
+    scroll-behavior: smooth;
 }
 #container{
     width: 100%;
@@ -94,7 +92,7 @@ ul h3::after{
 ul h3:hover{
     color: white;
 }
-ul h3:hover::after ,ul a h3.active::after{
+ul h3:hover::after /* , ul a h3.active::after*/{
     left: 0;
 
 }
@@ -136,7 +134,7 @@ main h2{
     width: 100%;
     border-radius:50%;
     border: 2px solid #dadada;
-    box-shadow: 0px 0px 20px  lightseagreen ;
+    box-shadow: 0px 0px 20px;
 }
 #text-section{
     height: 95%;
@@ -300,6 +298,7 @@ i{
 } 
 #Qualifications{
     padding: 35px;   
+    background: rgba(0, 0, 0, .4);
 }
 #Qualifications h1 , h2 , h3 , h4{
     font-family: nav-items;
@@ -337,11 +336,11 @@ i{
 
  #skills{
     width: 100%;
-    padding: 10px;
+    /* padding: 10px; */
     font-family: nav-items;
  }
  #skill-wrap{
-    margin-top: 15vh;
+    /* margin-top: 15vh; */
     width: 100%;
     min-height: 100vh;
     background: rgba(255, 255, 255, .15);
@@ -384,7 +383,7 @@ i{
     width: 100%;
     font-family: nav-items;
     font-size: 11px;
-    padding: 4px 14px;
+    padding: 4px 10px;
  }
  .skill-heading::after{
     content: '';
@@ -420,6 +419,7 @@ i{
 #certificates{
     min-height: 100vh;
     width: 100%;
+    padding: 10px;
     /* background-color: ali; */
 }
 #cert2{
@@ -471,7 +471,9 @@ i{
 #about{
     min-height: 100vh;
     width: 100%;
-    padding:100px;
+    padding:40px 20px;
+    background: rgba(0, 0, 0, .46);
+    margin-top: 20px;
 }
 #socials{
     font-family: nav-items;
@@ -526,4 +528,15 @@ i{
     font-family: sans-serif;
     font-size: 1.5em;
 
+}
+#copyright{
+    background: #000;
+    padding: 20px
+}
+.cert{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.card19{
+    height: 90vh;
 }
