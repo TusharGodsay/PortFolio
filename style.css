@@ -540,3 +540,15 @@ i{
     height: 90vh;
     margin-bottom: 20px;
 }
+.div{
+    position: relative;
+}
+.high{
+    position: absolute;
+    height: 10%;
+    border-radius: 20px;
+    width: 110%;
+    left:-4%;
+    bottom: 1;
+    background: rgba(255, 255, 255, .9);
+}
