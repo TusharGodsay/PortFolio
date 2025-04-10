@@ -21,7 +21,7 @@
         const userConfirmed = confirm("Do you want to download My CV?");
     
         if (userConfirmed) {
-            window.location.href = './Assets/Images/Resume.pdf';
+            window.location.href = './Assets/images/Resume.pdf';
         } else {
             alert("Download cancelled.");
         }
