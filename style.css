@@ -227,6 +227,9 @@ p{
   top: 0%;
   transition: .4s all ease-in-out;
   z-index: -1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 #primary-btn:hover::after{
     left: 0%;
