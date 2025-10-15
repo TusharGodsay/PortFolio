@@ -216,6 +216,9 @@ p{
     overflow: hidden;
     z-index: 1;
     border: 2px solid black;
+      display:flex;
+    justify-content:center;
+    align-items:center;
 }
 #primary-btn::after{
   content: "";
@@ -227,9 +230,7 @@ p{
   top: 0%;
   transition: .4s all ease-in-out;
   z-index: -1;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    
 }
 #primary-btn:hover::after{
     left: 0%;
