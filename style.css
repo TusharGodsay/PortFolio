@@ -167,10 +167,9 @@ span{
     text-transform: capitalize;
 }
 .bg{
-    background-color: rgba(255, 255, 255, .15);
     padding: 2px;
     border-radius: 2px;
-    color: rgb(200, 200, 26);
+    color: #009688;
     padding: 4px 2px;
 }
 
